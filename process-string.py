@@ -17,7 +17,16 @@
 # "J-J" ➞ "J"
 # Notes A hyphen will separate the two letters in the string.
 
+user_range1st = input("Enter the First letter: ")
+user_range2nd = input("Enter the Second letter: ")
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+start = user_range1st.split('-')
+end = user_range2nd.split('-')
+firstLetter = alphabet.index(user_range1st[0])
+lastLetter = alphabet.index(user_range2nd[0])
+final_result = alphabet[firstLetter : lastLetter + 1]
+print(final_result)
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-user_range = input("Enter a range of letters (e.g., a-z): ")
+
+
 
