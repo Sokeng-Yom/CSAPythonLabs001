@@ -6,6 +6,16 @@
 # * "Hello World" -> "HHeelllloo  WWoorrlldd"
 # * "1234!_ "     -> "11223344!!__  "
 
+user = input("Enter a word: ")
+def double(str):
+  all_letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  new_str = ''
+  for b in str:
+    if b.lower() in all_letters:
+      new_str += b
+    new_str += b
+  return new_str
+print(double(user))
 
 # Application 2
 #  Given a string indicating a range of letters, return a string which includes all the letters in that range, including the last letter. Note that if the range is given in capital letters, return the string in capitals also!
